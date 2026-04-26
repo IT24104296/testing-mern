@@ -21,3 +21,6 @@ Build command: cd frontend && npm install && npm run build
 Publish directory: frontend/dist
 
 VITE_API_URL=https://your-railway-url/api
+
+
+https://69eda7ae43cd26730946091e--incredible-tiramisu-6f9fa2.netlify.app/
