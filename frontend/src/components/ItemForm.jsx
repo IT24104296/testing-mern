@@ -4,9 +4,9 @@ function ItemForm({ initialValues, onSubmit, submitText }) {
   const [formData, setFormData] = useState(
     initialValues || {
       name: "",
+      supplierName: "",
       category: "",
       price: "",
-      serialNumber: "",
       description: "",
       imageUrl: "",
     }
@@ -32,6 +32,11 @@ function ItemForm({ initialValues, onSubmit, submitText }) {
       <label>Item Name</label>
       <input name="name" value={formData.name} onChange={handleChange} required />
 
+       <label>Supplier Name</label>
+      <input name="supplierName" value={formData.supplierName} onChange={handleChange} required />
+
+
+
       <label>Category</label>
       <input name="category" value={formData.category} onChange={handleChange} required />
 
@@ -40,15 +45,6 @@ function ItemForm({ initialValues, onSubmit, submitText }) {
         type="number"
         name="price"
         value={formData.price}
-        onChange={handleChange}
-        required
-      />
-
-       <label>Serial Number</label>
-      <input
-        type="text"
-        name="serialNumber"
-        value={formData.serialNumber}
         onChange={handleChange}
         required
       />

@@ -7,6 +7,10 @@ const itemSchema = new mongoose.Schema(
       required: [true, "Item name is required"],
       trim: true,
     },
+     supplierName: {
+      type: String,
+      required: [true, "Supplier name is required"],
+  },
     category: {
       type: String,
       required: [true, "Category is required"],
@@ -27,10 +31,7 @@ const itemSchema = new mongoose.Schema(
       default: "",
       trim: true,
     },
-    serialNumber: {
-      type: String,
-      required: [true, "Serial number is required"],
-  },
+   
 },
   { timestamps: true }
 );
